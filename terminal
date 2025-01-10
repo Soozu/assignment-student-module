@@ -1,0 +1,23 @@
+npm install @nestjs/common @nestjs/core @nestjs/platform-express @nestjs/typeorm @nestjs/config @nestjs/mapped-types typeorm mysql2 class-validator class-transformer reflect-metadata 
+npm run start:dev 
+curl -X POST http://localhost:3000/students \
+-H "Content-Type: application/json" \
+-d '{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe.new@example.com",
+  "enrollmentDate": "2024-03-20"
+}' 
+curl http://localhost:3000/students 
+curl http://localhost:3000/students/1 
+curl -X PATCH http://localhost:3000/students/1 \
+-H "Content-Type: application/json" \
+-d '{
+  "firstName": "Johnny"
+}' 
+curl -X DELETE http://localhost:3000/students/1 
+npm install 
+curl http://localhost:3000/students 
+npm install -g @nestjs/cli 
+npm install --save-dev @types/node @types/jest ts-node typescript 
+npm install --save-dev @nestjs/testing 
