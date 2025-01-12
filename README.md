@@ -29,7 +29,8 @@
 ## Project setup
 
 ```bash
-$ npm install
+$ npm install @nestjs/common @nestjs/config @nestjs/typeorm class-validator @nestjs/mapped-types typeorm @nestjs/core
+$ npm install --save-dev @types/node
 ```
 
 ## Compile and run the project
